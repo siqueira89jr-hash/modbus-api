@@ -20,9 +20,7 @@ Esta API atua como um **adaptador entre HTTP e Modbus TCP**, permitindo que apli
 
 A documentação completa, incluindo Quick Start, Arquitetura, API Reference, Endpoints Operacionais, Erros e Boas Práticas, está disponível via **GitHub Pages**.
 
-```text
 https://siqueira89jr-hash.github.io/modbus-api
-```
 
 ---
 
