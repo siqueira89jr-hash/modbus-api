@@ -27,22 +27,30 @@ A API carrega essas variáveis automaticamente no startup.
 
 ```env
 # ==========================================
-# Modbus API - Environment Configuration
+# Modbus API - Example Environment File
+# ==========================================
+# Este arquivo é apenas um EXEMPLO.
+# Copie para .env e ajuste conforme seu ambiente.
+# NÃO utilize este arquivo em produção.
+# NÃO versionar arquivos .env reais.
 # ==========================================
 
 # ------------------------------------------
-# API Security
+# API Security (OBRIGATÓRIO)
 # ------------------------------------------
 # Chave usada para autenticar operações de escrita
 MODBUS_API_KEY=CHANGE_ME_SUPER_SECRET_KEY
 
 # ------------------------------------------
-# Modbus TCP Connection
+# Modbus TCP Connection (OBRIGATÓRIO)
 # ------------------------------------------
 # Endereço IP ou hostname do servidor Modbus
-MODBUS_HOST=192.168.0.10
+MODBUS_HOST=127.0.0.1
 
-# Porta TCP do servidor Modbus (default: 502)
+# ------------------------------------------
+# Modbus TCP Connection (OPCIONAL)
+# ------------------------------------------
+# Porta TCP do Modbus (default: 502)
 MODBUS_PORT=502
 
 # Unit Identifier (Slave ID)
@@ -58,13 +66,26 @@ MODBUS_PING_ADDR=1
 MODBUS_PING_COUNT=1
 
 # ------------------------------------------
-# API Logging
+# API Logging (OPCIONAL)
 # ------------------------------------------
 # Arquivo de log da API
 API_LOG_FILE=api.log
 
 # Nível de log (INFO, WARNING, ERROR)
 API_LOG_LEVEL=INFO
+
+# Tamanho máximo do arquivo de log (bytes)
+API_LOG_MAX_BYTES=1000000
+
+# Quantidade de arquivos de backup
+API_LOG_BACKUP_COUNT=3
+
+# ------------------------------------------
+# CORS Configuration (OPCIONAL)
+# ------------------------------------------
+# Lista de origens permitidas separadas por vírgula
+# Exemplo: http://localhost:8001,http://192.168.0.10:8001
+CORS_ALLOW_ORIGINS=http://127.0.0.1:8001
 
 # ------------------------------------------
 # Modbus Client Logging (Opcional)
