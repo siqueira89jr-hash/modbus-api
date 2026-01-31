@@ -5,6 +5,7 @@ A **Modbus API** é configurada exclusivamente por **variáveis de ambiente**, s
 O uso de um arquivo `.env` é **fortemente recomendado**, especialmente em ambientes de desenvolvimento, testes e produção controlada.
 
 !!! warning "Importante"
+
     O arquivo `.env` **não deve ser versionado** em repositórios públicos ou privados.  
     Utilize `.gitignore` para garantir que ele não seja incluído no controle de versão.
 
